@@ -1,0 +1,51 @@
+# Central configuration for the nowcasting pipeline.
+# Every script/notebook reads from this file so parameters are changed in one place.
+
+target:
+  fred_series: "UNRATE"          # Civilian Unemployment Rate, monthly, seasonally adjusted
+  name: "unemployment_rate"
+
+fred_predictors:
+  - series_id: "ICSA"            # Initial Claims, weekly -> resampled monthly (mean)
+    name: "initial_claims"
+    resample: "mean"
+  - series_id: "INDPRO"          # Industrial Production Index, monthly
+    name: "industrial_production"
+    resample: "last"
+  - series_id: "PAYEMS"          # All Employees, Total Nonfarm, monthly
+    name: "nonfarm_payrolls"
+    resample: "last"
+
+google_trends:
+  keywords:
+    - "file for unemployment"
+    - "unemployment office"
+    - "jobs near me"
+  geo: "US"
+  timeframe: "2004-01-01 2024-12-31"
+
+sample:
+  start_date: "2004-01-01"
+  end_date: "2024-12-31"
+
+modeling:
+  n_lags: 3
+  test_window_months: 60        # expanding-window OOS evaluation, last 5 years held out
+  random_state: 42
+  xgboost:
+    n_estimators: 300
+    max_depth: 3
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+  arima_order: [1, 0, 1]
+  ridge_alpha: 1.0               # L2 penalty for the linear baseline (sklearn default; same feature set as XGBoost)
+  robustness_windows: [36, 48, 60, 84]   # alternative test_window_months for the stability check
+  bootstrap:
+    block_size: 6                # moving-block bootstrap block length (months)
+    n_boot: 2000
+    ci_level: 0.90
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
