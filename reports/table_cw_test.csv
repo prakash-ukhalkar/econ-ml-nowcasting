@@ -1,0 +1,3 @@
+comparison,cw_statistic,p_value_one_sided
+ARIMA (restricted) vs. XGBoost (unrestricted),1.170863657996041,0.12082679252838024
+ARIMA (restricted) vs. Ridge (unrestricted),-1.4359427943467982,0.9244906900429245

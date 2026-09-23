@@ -1,0 +1,67 @@
+rank,feature,mean_abs_shap,source
+0,ICSA_lag1,0.25223464,FRED / target
+1,UNRATE_lag1,0.23790544,FRED / target
+2,unemployment office_rollmean6,0.20611504,Google Trends
+3,PAYEMS_lag1,0.117752515,FRED / target
+4,unemployment office_rollmean3,0.109197915,Google Trends
+5,UNRATE_rollmean3,0.0984805,FRED / target
+6,PAYEMS_lag2,0.07774134,FRED / target
+7,UNRATE_lag2,0.061260756,FRED / target
+8,PAYEMS_lag3,0.059980575,FRED / target
+9,file for unemployment_lag1,0.048022676,Google Trends
+10,PAYEMS_rollmean6,0.045867503,FRED / target
+11,UNRATE_rollmean6,0.038274813,FRED / target
+12,ICSA_lag3,0.024394125,FRED / target
+13,UNRATE_lag3,0.023323176,FRED / target
+14,ICSA_mom_pct,0.016324516,FRED / target
+15,ICSA_rollstd3,0.012483636,FRED / target
+16,INDPRO_rollmean6,0.012476946,FRED / target
+17,INDPRO_rollstd3,0.011105493,FRED / target
+18,jobs near me_lag2,0.011090632,Google Trends
+19,PAYEMS_rollmean3,0.01098067,FRED / target
+20,jobs near me_lag3,0.010661236,Google Trends
+21,jobs near me_mom_pct,0.009534874,Google Trends
+22,UNRATE_rollstd6,0.0083814105,FRED / target
+23,unemployment office_rollstd6,0.0069775437,Google Trends
+24,PAYEMS_rollstd3,0.0064079156,FRED / target
+25,unemployment office_lag1,0.0063693076,Google Trends
+26,PAYEMS_rollstd6,0.0056454367,FRED / target
+27,INDPRO_lag1,0.0055168215,FRED / target
+28,file for unemployment_mom_pct,0.0053020655,Google Trends
+29,INDPRO_lag2,0.004930056,FRED / target
+30,unemployment office_mom_pct,0.0045746574,Google Trends
+31,unemployment office_lag2,0.004364072,Google Trends
+32,unemployment office_lag3,0.0042814715,Google Trends
+33,ICSA_rollstd6,0.004086947,FRED / target
+34,file for unemployment_rollstd3,0.0040679146,Google Trends
+35,INDPRO_rollstd6,0.00398122,FRED / target
+36,jobs near me_rollmean3,0.003952175,Google Trends
+37,jobs near me_rollstd3,0.0038143997,Google Trends
+38,UNRATE_rollstd3,0.0035676493,FRED / target
+39,ICSA_rollmean6,0.0031832042,FRED / target
+40,unemployment office_rollstd3,0.0031170053,Google Trends
+41,PAYEMS_mom_pct,0.0027627256,FRED / target
+42,INDPRO_mom_pct,0.0025382177,FRED / target
+43,jobs near me_rollmean6,0.0023687691,Google Trends
+44,jobs near me_rollstd6,0.002331861,Google Trends
+45,jobs near me_lag1,0.0020808445,Google Trends
+46,INDPRO_lag3,0.0017654458,FRED / target
+47,ICSA_rollmean3,0.0015413887,FRED / target
+48,file for unemployment_rollstd6,0.0015300089,Google Trends
+49,month_5,0.001121143,FRED / target
+50,ICSA_lag2,0.00109293,FRED / target
+51,INDPRO_rollmean3,0.0008690561,FRED / target
+52,month_9,0.00081510196,FRED / target
+53,file for unemployment_lag3,0.0005534548,Google Trends
+54,file for unemployment_rollmean6,0.0005361416,Google Trends
+55,file for unemployment_rollmean3,0.00043298086,Google Trends
+56,file for unemployment_lag2,0.00030126737,Google Trends
+57,month_6,0.00028250544,FRED / target
+58,month_4,0.00025603184,FRED / target
+59,month_10,0.00019104037,FRED / target
+60,month_11,0.000100645666,FRED / target
+61,month_12,6.12234e-05,FRED / target
+62,month_8,0.0,FRED / target
+63,month_7,0.0,FRED / target
+64,month_3,0.0,FRED / target
+65,month_2,0.0,FRED / target
